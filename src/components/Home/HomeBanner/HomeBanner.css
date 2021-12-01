@@ -1,0 +1,107 @@
+.home_banner{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* background: url(../../../img/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    position: relative; */
+    /* background-color: #122033; */
+    /* opacity: 0.5; */
+    z-index: 22;
+    position: relative;
+}
+.banner_wrapper{
+    position: relative;
+    z-index: 23;
+}
+.my_img img{
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.my_text_info h2{
+    font-size: 120px;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 15px;
+}
+.my_text_info h2 span{
+    color: var(--main-color);
+    font-size: 120px;
+    font-weight: 700;
+}
+.my_text_info p{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.my_text_info p b{
+    color: green;
+    font-weight: 600;
+}
+
+/* ------media query--------- */
+
+/* -----ipad  size ------------- */
+@media(min-width:768px) and (max-width:991px){
+    .my_text_info h2{
+        font-size: 78px;
+    }
+    .my_text_info h2 span{
+        font-size: 78px;
+    }
+    .my_text_info p{
+        font-size: 48px;
+        font-weight: 500;
+    }
+}
+/* -----tablet size ------------- */
+@media(min-width:576px) and (max-width:768px){
+    .my_text_info h2{
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .my_text_info h2 span{
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .my_text_info p{
+        font-size: 38px;
+        font-weight: 500;
+    }
+}
+
+/* -----mobile device-------- */
+@media(min-width:375px) and (max-width:576px){
+    .my_text_info h2{
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .my_text_info h2 span{
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .my_text_info p{
+        font-size: 28px;
+        font-weight: 500;
+    }
+}
+/* ---small mobile device----------- */
+@media(max-width:375px){
+    .my_text_info h2{
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .my_text_info h2 span{
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .my_text_info p{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}

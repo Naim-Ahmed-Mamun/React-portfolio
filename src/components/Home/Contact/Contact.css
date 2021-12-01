@@ -1,0 +1,42 @@
+form input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    border: 2px solid #dfdede;
+    border-radius: 5px;
+}
+form input[type="submit"]{
+    background: green;
+    color: white;
+    border: none;
+}
+form textarea{
+    margin-bottom: 20px;
+}
+.contact_left_side_ h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.contact_left_side_ ul{
+    margin: 0;
+    padding: 0;
+}
+.contact_left_side_ ul li{
+    color: white;
+    margin-bottom: 15px;
+}
+.contact_left_side_ ul li i{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* ------media query--------- */
+
+/* ---small mobile device----------- */
+@media(max-width:375px){
+    .contact_left_side_ ul li {
+        font-size: 14px;
+    }
+}

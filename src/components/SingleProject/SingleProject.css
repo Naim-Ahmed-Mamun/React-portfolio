@@ -1,0 +1,88 @@
+.single_project{
+    padding: 100px 0 100px;
+}
+.project_wrapper{
+    position: relative;
+}
+/* .project_wrapper .back_home{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+}
+.project_wrapper .back_home i{
+    font-size: 25px;
+    color: red;
+} */
+.single_item_right_side .app_name{
+    position: relative;
+    padding-left: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+.single_item_right_side .app_name::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: green;
+}
+.single_item_right_side ul li{
+    color: white;
+    margin-bottom: 4px;
+}
+.single_item_right_side ul li i{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.single_item_right_side ul li a{
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 500;
+    color: blue;
+    text-decoration: underline !important;
+    margin-right: 10px;
+}
+.web_info{
+    color: white;
+    margin:10px 0;
+}
+.website_details {
+    list-style: circle;
+}
+.website_details li{
+    margin-bottom: 10px;
+}
+.technology{
+    display: inline-block;
+    padding: 3px;
+    background-color: green;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    max-width: 400px;
+    color: white;
+}
+
+/* ------media query--------- */
+
+/* ---small mobile device----------- */
+@media(max-width:375px){
+    .web_info {
+        font-size: 16px;
+    }
+    .single_item_right_side ul{
+        padding: 0;
+    }
+    .single_item_right_side ul li a {
+        font-size: 14px;
+        color: #0a0aef;
+        margin-right: 5px;
+    }
+}
