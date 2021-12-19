@@ -8,7 +8,8 @@ import { RiLink } from 'react-icons/ri';
 import { BsGithub } from 'react-icons/bs';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import { NavHashLink } from 'react-router-hash-link';
+// import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 // import { GrClose } from 'react-icons/gr';
 
 const SingleProject = () => {
@@ -23,9 +24,9 @@ const SingleProject = () => {
          <div className="single_project">
             <div className="container project_wrapper">
                {/* <div className="back_home"><i><GrClose/></i></div> */}
-               <NavHashLink to="/">
+               <Link to="/">
                <button style={{display:'inline-block'}} className="btn btn-success mb-5">Back Home</button>
-               </NavHashLink>
+               </Link>
                <div className="row" data-aos="fade-up">
                   <div className="col-lg-7">
                      <div className="single_item_left_side">

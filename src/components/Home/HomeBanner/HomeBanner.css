@@ -40,8 +40,9 @@
     margin-bottom: 15px;
 }
 .my_text_info p b{
-    color: green;
+    color: white;
     font-weight: 600;
+    border-bottom: 2px solid var(--main-color);
 }
 
 /* ------media query--------- */

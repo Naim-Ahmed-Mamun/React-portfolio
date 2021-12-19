@@ -1,0 +1,14 @@
+
+.project{
+    overflow: hidden;
+    transition: 0.3s;
+}
+.project:hover{
+    transform: translateY(-10px);
+}
+.project img{
+    transition: 0.3s;
+}
+.project img:hover{
+    transform: scale(1.2);
+}

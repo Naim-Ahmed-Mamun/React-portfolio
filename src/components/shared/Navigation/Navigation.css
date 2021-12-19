@@ -37,11 +37,13 @@
 }
 
 .nav_resume_btn{
-    padding: 7px 18px;
+    padding: 7px 0px;
     border: 2px solid green;
     border-radius: 5px;
     display: inline-block;
     color: white;
+    width: 180px;
+    text-align: center;
 }
 .nav_resume_btn:hover{
     color: white;
@@ -49,7 +51,7 @@
 .sticky .nav_resume_btn{
     color: black !important;
 }
-.sticky .nav_resume_btn{
+.sticky .nav_resume_btn:hover{
     color: green !important;
 }
 

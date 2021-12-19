@@ -14,6 +14,9 @@ import e_commerceHtml_3 from '../img/e-commerce-html-unique.PNG';
 import appLanding from '../img/app-landing-page.PNG';
 import appLanding_2 from '../img/app-landing-page-feature.PNG';
 import appLanding_3 from '../img/app-landing-page-testi.PNG';
+import apartment_1 from '../img/apartment-home-page.PNG';
+import apartment_2 from '../img/apartment-user-role.PNG';
+import apartment_3 from '../img/apartment-admin-role';
 
 
 const projectData = [
@@ -45,6 +48,32 @@ const projectData = [
     },
     {
        id: '2',
+       img: apartment_1,
+       img_2:apartment_2,
+       img_3:apartment_3,
+       appName: 'Apartment Sales',
+       websiteInfo: 'Full Stack Apartment Selling Website',
+       technologies: {
+          first: 'React',
+          second: 'Material Ui',
+          third: 'React Router v6',
+          fourth: 'Node js',
+          five: 'Express js',
+          six: 'Mongodb',
+          seven: 'Heroku',
+          eight: 'Firebase',
+       },
+       link:'https://apartment-sales-5fbab.web.app/',
+       gitServer:'https://github.com/Naim-Ahmed-Mamun/apartment-sales-server',
+       gitClient:'https://github.com/Naim-Ahmed-Mamun/apartment-sales',
+       projectDetails:{
+          point_1:'Admin can see all order lists of the users and change the orders status.',
+          point_2:'Admin can add a product and manage all product',
+          point_3:'User can login the website and see the dashboard and see here order list and manage her product',
+       }
+    },
+    {
+       id: '3',
        img: travel_tour_1,
        img_2:travel_tour_2,
        img_3:travel_tour_3,
@@ -70,7 +99,7 @@ const projectData = [
       }
     },
     {
-       id:'3',
+       id:'4',
        img: health_care_1,
        img_2: health_care_2,
        img_3: health_care_3,
@@ -91,7 +120,7 @@ const projectData = [
       }
     },
     {
-       id:'4',
+       id:'5',
        img: e_commerceHtml,
        img_2: e_commerceHtml_2,
        img_3: e_commerceHtml_3,
@@ -112,7 +141,7 @@ const projectData = [
       }
     },
     {
-       id:'5',
+       id:'6',
        img: appLanding,
        img_2: appLanding_2,
        img_3: appLanding_3,

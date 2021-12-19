@@ -40,7 +40,7 @@ const Blog = () => {
          <section id="blog">
             <div className="py-5">
                <div className="container">
-                  <div className="sec_title text-center my-4" data-aos="fade-up">
+                  <div className="sec_title text-center my-5" data-aos="fade-up">
                      <h2>Blog</h2>
                   </div>
                   <div className="row" data-aos="fade-up">

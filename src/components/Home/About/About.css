@@ -89,11 +89,23 @@
     color: green;
 }
 .skill_item img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 140px;
 }
 /* ------media query--------- */
 
+/* --laptop device-- */
+@media(min-width:1200px) and (max-width:1400px){
+    .skill_item h5 {
+        font-size: 22px;
+    }
+}
+/* -----mobile device---- */
+@media(min-width:768px) and (max-width:991px){
+    .skill_item h5 {
+        font-size: 20px;
+    }
+}
 /* -----mobile device---- */
 @media(max-width:768px){
     .about_right_side{

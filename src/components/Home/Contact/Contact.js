@@ -1,11 +1,10 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
 import { MdLocationOn } from 'react-icons/md';
 import { MdOutlineEmail } from 'react-icons/md';
 import { FaPhoneAlt } from 'react-icons/fa';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
 
@@ -18,9 +17,14 @@ const Contact = () => {
       ).then(res => {
          // console.log(res.text)
          if (res.status === 200) {
-            toast.success('Message Send Successfully', {
-               position: "top-center",
-            });
+             Swal.fire({
+               icon:'success',
+               title:'Message Send Successfully',
+               timer: 1500
+           })
+           document.getElementById('name').value = '';
+           document.getElementById('email').value = '';
+           document.getElementById('message').value = '';
          }
       })
          .catch(err => {
@@ -32,7 +36,7 @@ const Contact = () => {
       <>
          <div id="contact" className="contact py-5">
             <div className="container">
-            <div className="sec_title text-center my-4" data-aos="fade-up">
+            <div className="sec_title text-center my-5" data-aos="fade-up">
                   <h2>Contact Me</h2>
                </div>
                <div className="row mt-5">
@@ -49,9 +53,9 @@ const Contact = () => {
                   <div className="col-lg-6 col-md-6" data-aos="fade-up">
                      <div className="contact_right_side">
                         <form onSubmit={handleFormSubmit}>
-                           <input name="name" type="text" placeholder="Your Name" required />
-                           <input name="email" type="text" placeholder="Your Email" required />
-                           <textarea name="message" id="" cols="10" rows="7" placeholder="Your Message" required></textarea>
+                           <input id="name" name="name" type="text" placeholder="Your Name" required />
+                           <input id="email" name="email" type="text" placeholder="Your Email" required />
+                           <textarea id="message" name="message" cols="10" rows="7" placeholder="Your Message" required></textarea>
                            <input type="submit" value="Send Message" />
                         </form>
                      </div>
@@ -60,7 +64,6 @@ const Contact = () => {
             </div>
          </div>
 
-         <ToastContainer />
       </>
    );
 };

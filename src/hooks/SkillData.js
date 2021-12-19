@@ -19,16 +19,17 @@ import familiar_2 from '../img/react-native.png';
 const SkillsItem = [
   {
     id:'1',
-    img:skillImg_1,
-    name:'Firebase',
-    category:'expertise'
-  },
-  {
-    id:'2',
     img:skillImg_2,
     name:'React js',
     category:'expertise'
   },
+  {
+    id:'2',
+    img:skillImg_7,
+    name:'Heroku',
+    category:'comfortable'
+  },
+  
   {
     id:'3',
     img:skillImg_3,
@@ -55,9 +56,9 @@ const SkillsItem = [
   },
   {
     id:'7',
-    img:skillImg_7,
-    name:'Heroku',
-    category:'comfortable'
+    img:skillImg_1,
+    name:'Firebase',
+    category:'expertise'
   },
   {
     id:'8',

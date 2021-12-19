@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
@@ -22,11 +22,11 @@ const Navigation = () => {
          <Navbar className={sticky ? 'sticky nav_container' : 'nav_container'}
             collapseOnSelect expand="lg" variant="dark">
             <Container>
-               <Link to="/" className="logo"><strong>Naim.</strong></Link>
+               <a href="#home" className="logo"><strong>Naim.</strong></a>
                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                <Navbar.Collapse id="responsive-navbar-nav">
                   <Nav className="ms-auto">
-                     <Nav.Link className="nav_link" href="/">Home</Nav.Link>
+                     <Nav.Link className="nav_link" href="#home">Home</Nav.Link>
                      <Nav.Link className="nav_link" href="#about">About</Nav.Link>
                      <Nav.Link className="nav_link" href="#portfolio">Portfolio</Nav.Link>
                      <Nav.Link className="nav_link" href="#blog">Blog</Nav.Link>

@@ -21,7 +21,7 @@ const About = () => {
       <>
          <div className="about" id="about">
             <div className="container">
-               <div className="sec_title text-center my-4" data-aos="fade-up">
+               <div className="sec_title text-center my-5" data-aos="fade-up">
                   <h2>ABOUT ME</h2>
                </div>
                <div className="row mt-5 align-items-center">
@@ -98,7 +98,7 @@ const About = () => {
                      {
                         matchedSkills.map(skill => {
                            return (
-                              <div key={skill.id} className="col-lg-3 col-md-4 col-sm-6 mb-3" data-aos="fade-up">
+                              <div key={skill.id} className="col-lg-3 col-xl-2 col-md-3 col-sm-6 mb-3" data-aos="fade-up">
                                  <div className="text-center skill_item">
                                     <h5>{skill.name}</h5>
                                      <img src={skill.img} alt=""/>
